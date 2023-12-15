@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_path - gets the PATH variable from the environment
+ * get_path - gets the PATH variable from the environment to catch
  * @envp: pointer to environment
  * Return: pointer to PATH variable
  * Description: This function is not portable. It will only work on Linux.
