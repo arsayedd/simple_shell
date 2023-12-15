@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * dup_2D - duplicate 2D array of strings (char **)
+ * dup_2D - duplicate 2D array of strings (char **) to handle
  * @list: 2D array of strings to duplicate (char **)
  * Return: pointer to new 2D array of strings (char **)
  *
