@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string to an integer
- * @string: string to convert
- * Return: integer
+ * _atoi - to convert string to integer
+ * @string: string to use
+ * Return: result
  */
 int _atoi(char *string)
 {
@@ -30,9 +30,9 @@ int _atoi(char *string)
 	return (res * sign);
 }
 /**
- * nts - converts a number to a string
- * @num: number to convert
- * @result: buffer to store result
+ * nts - to convert integer to string
+ * @num: integer to use
+ * @result: buffer to store the result
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -46,10 +46,10 @@ void nts(int num, char result[])
 }
 
 /**
- * nts_recursive_helper - converts a number to a string
- * @num: number to convert
- * @result: buffer to store result
- * @index: index of buffer
+ * nts_recursive_helper - to convert integer to string
+ * @num: number to use
+ * @result: buffer to store the result
+ * @index: index of this buffer
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
