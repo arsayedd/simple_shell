@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcpy - copies the string pointed to by src
- * @copy_to: pointer to destination
- * @copy_from: pointer to source
- * Return: pointer to destination
+ * _strcpy - to copy the string, src pointed to 
+ * @copy_to: pointer to the destination
+ * @copy_from: pointer to the source
+ * Return: pointer to  this destination
  */
 char *_strcpy(char *copy_to, char *copy_from)
 {
@@ -19,12 +19,12 @@ char *_strcpy(char *copy_to, char *copy_from)
 	return (copy_to);
 }
 /**
- * _strstr - locates a substring in a string
- * @the_big_str: pointer to string
- * @the_little_str: pointer to substring
- * Return: pointer to the beginning of the located sub
- * string, or NULL if the substring is not found.
- * Description: This function locates a substring.
+ * _strstr - to locate a substring in the string
+ * @the_big_str: pointer to a string
+ * @the_little_str: pointer to a substring
+ * Return: pointer to substring
+ * 
+ * Description: This function works as a finder for a substring.
  */
 char *_strstr(char *the_big_str, char *the_little_str)
 {
@@ -49,10 +49,10 @@ char *_strstr(char *the_big_str, char *the_little_str)
 }
 
 /**
- * _strcmp - compares two strings
- * @string1: first string
- * @string2: second string
- * Return: 0 if strings are equal, otherwise the difference between the first
+ * _strcmp - to compare two strings
+ * @string1: first string to use
+ * @string2: second string to use
+ * Return: 0 if strings are equal
  */
 int _strcmp(char *string1, char *string2)
 {
@@ -69,10 +69,10 @@ int _strcmp(char *string1, char *string2)
 	return (string1[i] - string2[i]);
 }
 /**
- * _strcat - concatenates two strings
- * @s1: first string
- * @s2: second string
- * Return: pointer to the resulting string
+ * _strcat - to concatenate two strings
+ * @s1: first string to use
+ * @s2: second string to use
+ * Return: pointer to string
  */
 char *_strcat(char *s1, char *s2)
 {
@@ -87,9 +87,9 @@ char *_strcat(char *s1, char *s2)
 }
 
 /**
- * _memcopy - copies a block of memory
- * @copy_to: pointer to the destination memory
- * @copy_from: pointer to the source memory
+ * _memcopy - to copy block of memory
+ * @copy_to: pointer to destination memory to use
+ * @copy_from: pointer to source memory to use
  * @n: number of bytes to copy
  * Return: pointer to the destination memory
  */
