@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_All_Alias - print all alias
+ * print_All_Alias - to print all aliases
  *
- * Return: 0 on success, 1 on failure
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int print_All_Alias(void)
