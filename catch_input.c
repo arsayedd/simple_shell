@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * get_input - get input from user to catch
- * @buff: pointer to buffer to store input (char **)
- * @size: pointer to size of input to be returned (int *)
- * @buffer_size: pointer to size of buffer to be returned (int *)
- * @source: source of input (int)
+ * get_input - get input from user
+ * @buff: pointer to buffer
+ * @size: pointer to size of input
+ * @buffer_size: pointer to size of buffer
+ * @source: source of input
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -33,9 +33,9 @@ void get_input(char **buff, int *size, int *buffer_size, int source)
 	handle_str_spaces(*buff, *buffer_size);
 }
 /**
- * handle_str_spaces - handle spaces in string
- * @str: string to handle spaces in (char *)
- * @str_size: size of string to handle spaces in (int)
+ * handle_str_spaces - to handle spaces in a string
+ * @str: string to use
+ * @str_size: size of string
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -71,9 +71,9 @@ void handle_str_spaces(char *str, int str_size)
 	_Free(temp);
 }
 /**
- * remove_read_spaces - remove spaces from string
- * @str: string to remove spaces from (char *)
- * Return: size of string after removing spaces (int)
+ * remove_read_spaces - to remove spaces from a string
+ * @str: string to use
+ * Return: size of string
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int remove_read_spaces(char *str)
@@ -101,9 +101,9 @@ int remove_read_spaces(char *str)
 	return (_strlen(str));
 }
 /**
- * remove_read_spaces_helper - helper function for remove_read_spaces
- * @str: string to remove spaces from (char *)
- * @strSize: size of string to remove spaces from (int)
+ * remove_read_spaces_helper - helper function
+ * @str: string to use
+ * @strSize: size of string
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -136,13 +136,13 @@ void remove_read_spaces_helper(char *str, int strSize)
 	}
 }
 /**
- * check_spaces - check if there are spaces in string
- * @str: string to check (char *)
- * @i: index to check from (int)
+ * check_spaces - to check whether a string contains spaces
+ * @str: string to check
+ * @i: index to check
  * Return:
- * (1) if there is a space before ;,
- * (2) if there is a space after ;,
- * (3) if there is a space before && or ||, (0) otherwise (int)
+ * (1) if before ;,
+ * (2) if after ;,
+ * (3) if before && or ||
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int check_spaces(char *str, int i)
