@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * getc_command - get command from user input (char *)
+ * getc_command - get command from user to catch input (char *)
  * @str: user input (char *)
  * @c_command: pointer to command to be returned (char **)
  * @cmd_size: pointer to size of command to be returned (int *)
