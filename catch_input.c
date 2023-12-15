@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_input - get input from user
+ * get_input - get input from user to catch
  * @buff: pointer to buffer to store input (char **)
  * @size: pointer to size of input to be returned (int *)
  * @buffer_size: pointer to size of buffer to be returned (int *)
