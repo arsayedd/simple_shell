@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * handle_cd - handles the cd command
- * @arguments: pointer to array of arguments
- * Return: 0 if successful, otherwise 1
- * This function is not portable. It will only work on Linux.
+ * handle_cd - to handle cd command
+ * @arguments: pointer to array
+ * Return: 0 (success), 1 (failure)
+ * This function will only work on Linux.
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_cd(char **arguments)
@@ -38,13 +38,13 @@ int handle_cd(char **arguments)
 	return (0);
 }
 /**
- * handle_cd_helper - handle cd
- * @arguments: pointer to array of arguments
- * @pwd: pointer to array of pwd arguments
- * @oldpwd: pointer to array of oldpwd arguments
- * @cd: pointer of string should go to
- * @cwd: pointer of string of current directory
- * Return: 1 if successful, otherwise 0
+ * handle_cd_helper - to handle this cd command 
+ * @arguments: pointer to array
+ * @pwd: pointer to point to array of pwd arguments
+ * @oldpwd: pointer to array of previous pwd arguments
+ * @cd: pointer of string to the certain place
+ * @cwd: pointer of string to the current directory
+ * Return: 1 (success), 0 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_cd_helper(char **arguments, char **pwd,
