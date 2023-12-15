@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * handle_alias - handle alias command (char **)
- * @arguments: arguments to handle alias command (char **)
- * Return: 0 on success, 1 on failure
+ * handle_alias - to handle alias command
+ * @arguments: arguments to handle
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_alias(char **arguments)
@@ -31,9 +31,9 @@ int handle_alias(char **arguments)
 	return (state);
 }
 /**
- * print_one_Alias - print one alias
- * @key: key to print (char *)
- * Return: 0 on success, 1 on failure
+ * print_one_Alias - to print an alias
+ * @key: key to use
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int print_one_Alias(char *key)
@@ -60,9 +60,9 @@ int print_one_Alias(char *key)
 	return (0);
 }
 /**
- * get_alias_value - get value of alias
- * @key: key to get value of (char *)
- * Return: value of alias (char *)
+ * get_alias_value - to get the value of an alias
+ * @key: key to use
+ * Return: the value of an alias
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 char *get_alias_value(char *key)
@@ -95,9 +95,9 @@ char *get_alias_value(char *key)
 	return (value);
 }
 /**
- * get_alias_index - get index of alias
- * @key: key to get index of (char *)
- * Return: index of alias (int)
+ * get_alias_index - to get the index of an alias
+ * @key: key to use
+ * Return: the index of an alias
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int get_alias_index(char *key)
@@ -128,9 +128,9 @@ int get_alias_index(char *key)
 	return (-1);
 }
 /**
- * alias_replace - replace alias in command
- * @str_ptr: pointer to command (char **)
- * @str_size: pointer to size of command (int *)
+ * alias_replace - to replace the alias in command
+ * @str_ptr: pointer to command
+ * @str_size: pointer to size of command
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
