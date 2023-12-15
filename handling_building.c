@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * handle_builtin - handles the builtin command
- * @first_sigment: pointer to first sigment of command
- * @arguments: pointer to array of arguments
- * Return: 0 if successful, otherwise 1
+ * handle_builtin - to handle the built-in command
+ * @first_sigment: pointer to first sigment
+ * @arguments: pointer to array
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_builtin(char *first_sigment, char **arguments)
@@ -47,9 +47,9 @@ int handle_builtin(char *first_sigment, char **arguments)
 	}
 }
 /**
- * check_builtin - checks if the command is builtin
- * @first_sigment: pointer to first sigment of command
- * Return: 1 if builtin, otherwise 0
+ * check_builtin - to check wether the command is built-in
+ * @first_sigment: pointer to first sigment
+ * Return: 1 (built-in), otherwise 0
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int check_builtin(char *first_sigment)
