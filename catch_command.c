@@ -47,9 +47,9 @@ void getc_command(char *str, char **c_command, int *cmd_size)
 	edit_command(c_command, cmd_size);
 }
 /**
- * last_space - check if last char in string is space
- * @str: string to check (char *)
- * Return: (1) if last char in string is space, (0) others (int)
+ * last_space - to check for space in the last char in string 
+ * @str: string to check
+ * Return: result
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int last_space(char *str)
