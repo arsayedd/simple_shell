@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - entry point
- * @argc: number of arguments
- * @argv: array of arguments
- * @envp: array of environment variables
- * Return: 0 if successful, otherwise 1
+ * main - this is the entry point
+ * @argc: this is the number of arguments
+ * @argv: this is an array of arguments
+ * @envp: this is an array of environment variables
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int main(int argc, char *argv[], char *envp[])
@@ -24,10 +24,10 @@ int main(int argc, char *argv[], char *envp[])
 	return (State);
 }
 /**
- * check_file_mode - check if file mode is active
- * @filename: pointer to filename
- * @fd: pointer to file descriptor
- * @active_mode: pointer to active mode
+ * check_file_mode - to check wether file mode is active
+ * @filename: this is the pointer to this filename
+ * @fd: this is the pointer to the file descriptor
+ * @active_mode: this is the pointer to this active mode
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -49,9 +49,9 @@ void check_file_mode(char *filename, int *fd, int *active_mode)
 	}
 }
 /**
- * Fsize - get the size of file
- * @fname: pointer to filename
- * Return: size of file
+ * Fsize - to get sizes
+ * @fname: this is a pointer to the filename
+ * Return: result
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int Fsize(char *fname)
@@ -62,10 +62,10 @@ int Fsize(char *fname)
 	return (st.st_size);
 }
 /**
- * shell_core - core of shell
- * @symbol: pointer to symbol
- * @fd: file descriptor
- * @active_mode: active mode
+ * shell_core - this will be the core of my shell
+ * @symbol: this is a pointer to the symbol
+ * @fd: this is file descriptor to use
+ * @active_mode: this is active mode
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
