@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * handle_exit - handles the exit command
- * @arguments: pointer to array of arguments to exit command (char **)
- * Return: 0 if successful, otherwise 1
+ * handle_exit - to handle exit command
+ * @arguments: pointer to array
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_exit(char **arguments)
@@ -32,9 +32,9 @@ int handle_exit(char **arguments)
 	}
 }
 /**
- * checkExitArugment - checks if the argument of exit is valid
- * @str: pointer to argument of exit command (char *)
- * Return: 0 if valid, otherwise 2
+ * checkExitArugment - to check wether the argument of the exit is valid
+ * @str: pointer to argument
+ * Return: 0 (valid), otherwise 2
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int checkExitArugment(char *str)
