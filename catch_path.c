@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * get_path - gets the PATH variable from the environment to catch
- * @envp: pointer to environment
- * Return: pointer to PATH variable
- * Description: This function is not portable. It will only work on Linux.
+ * get_path - to get the PATH variable
+ * @envp: pointer to an environment
+ * Return: pointer to a PATH variable
+ * Description: This function will only work on Linux.
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 char *get_path(char *envp[])
@@ -27,10 +27,10 @@ char *get_path(char *envp[])
 }
 
 /**
- * find_path - finds the path to a command
- * @path_i: path to search
- * @input: command to search for in path variable (e.g. ls)
- * Return: pointer to path if found, otherwise NULL
+ * find_path - to find the path to a command
+ * @path_i: path for searching
+ * @input: command to search
+ * Return: result
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 char *find_path(char *path_i, char *input)
