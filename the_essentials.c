@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _free - free pointer and set it to NULL
- * @ptr: pointer to free (void **)
+ * _free - to free a pointer and set its value to NULL
+ * @ptr: pointer to free
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -16,9 +16,9 @@ void _free(void **ptr)
 }
 
 /**
- * _malloc - allocate memory and check if it failed
- * @size: size of memory to allocate (unsigned int)
- * Return: pointer to allocated memory (void *)
+ * _malloc - to allocate memory
+ * @size: size of memory
+ * Return: pointer to the allocated memory
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 void *_malloc(unsigned int size)
@@ -36,10 +36,10 @@ void *_malloc(unsigned int size)
 }
 
 /**
- * _realloc - reallocate memory and check if it failed
- * @ptr: pointer to reallocate (void **)
- * @new_size: new size of memory to allocate (unsigned int)
- * Return: pointer to reallocated memory (void *)
+ * _realloc - to reallocate memory
+ * @ptr: pointer to the reallocated memory
+ * @new_size: new size of memory to be allocated
+ * Return: pointer to reallocated memory
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 void *_realloc(void *ptr, int new_size)
@@ -58,11 +58,11 @@ void *_realloc(void *ptr, int new_size)
 }
 
 /**
- * _read - read from file descriptor and check if it failed
- * @fd: file descriptor to read from (int)
- * @str: buffer to read into (char *)
- * @str_size: size of buffer to read into (int)
- * Return: number of characters read (int)
+ * _read - to read from file descriptor
+ * @fd: file descriptor to use
+ * @str: buffer to use
+ * @str_size: size of buffer to use
+ * Return: number of characters
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int _read(int fd, char *str, int str_size)
@@ -81,8 +81,8 @@ int _read(int fd, char *str, int str_size)
 }
 
 /**
- * print - print to file descriptor
- * @fd: file descriptor to print to (int)
+ * print - to print to the file descriptor
+ * @fd: file descriptor use
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
