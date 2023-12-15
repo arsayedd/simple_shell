@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * handle_command - handles the command
- * @command: pointer to command
+ * handle_command - to handle any command
+ * @command: pointer to command overall
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -43,11 +43,11 @@ void handle_command(char *command)
 	handle_curCommand(first_sigment, arguments);
 }
 /**
- * handle_command_helper - handles the command
- * @first_sigment: pointer to first sigment of command
- * @arguments: pointer to array of arguments
- * @c: char
- * Return: 1 if successful, otherwise 0
+ * handle_command_helper - to handle a command helper 
+ * @first_sigment: pointer to the first sigment
+ * @arguments: pointer to array
+ * @c: char to use
+ * Return: 1 (success), 0 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_command_helper(char *first_sigment, char **arguments, char c)
@@ -73,9 +73,9 @@ int handle_command_helper(char *first_sigment, char **arguments, char c)
 	return (0);
 }
 /**
- *  check_many_commands - checks if the user entered many commands
- * @str: pointer to string
- * Return: ';' if the user entered many commands, otherwise 0
+ *  check_many_commands - to check whether the user entered too many commands
+ * @str: pointer to string to use
+ * Return: ';' if the user entered too many commands, otherwise 0
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 
@@ -97,9 +97,9 @@ char check_many_commands(char *str)
 }
 
 /**
- * handle_curCommand - handles the current command
- * @first_sigment: pointer to first sigment of command
- * @arguments: pointer to array of arguments
+ * handle_curCommand - to handle the current command stated
+ * @first_sigment: pointer to first sigment
+ * @arguments: pointer to array
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
