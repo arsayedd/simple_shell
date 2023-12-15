@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * intail_NULL - intailize string with NULL
- * @str: pointer to string
- * @size: size of string
+ * intail_NULL - to intailize any string with NULL value
+ * @str: pointer to a string
+ * @size: size of the string
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -14,9 +14,9 @@ void intail_NULL(char *str, int size)
 		str[i] = '\0';
 }
 /**
- * empty_text - check if string is empty
- * @str: pointer to string
- * Return: 0 if empty, otherwise 1
+ * empty_text - to check wether a string is empty
+ * @str: pointer to this string
+ * Return: 0 (empty), otherwise 1
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int empty_text(char *str)
@@ -32,12 +32,12 @@ int empty_text(char *str)
 	return (0);
 }
 /**
- * replaceTxtInd - replace text in string
- * @str1: pointer to string
- * @str2: pointer to string
- * @startIndex: start index
- * @endIndex: end index
- * Return: pointer to new string
+ * replaceTxtInd - to replace any text in a string
+ * @str1: the first pointer to string
+ * @str2: the second pointer to string
+ * @startIndex: the start index
+ * @endIndex: the end index
+ * Return: pointer pointing to new string
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 char *replaceTxtInd(char **str1, char *str2, int startIndex, int endIndex)
