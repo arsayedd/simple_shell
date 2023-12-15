@@ -64,12 +64,12 @@ int last_space(char *str)
 	return (0);
 }
 /**
- * getc_command_helper - helper function for getc_command
- * @str: user input (char *)
- * @c_command: pointer to command to be returned (char **)
- * @cmd_size: pointer to size of command to be returned (int *)
- * @i: pointer to index of user input (int *)
- * @j: pointer to index of command to be returned (int *)
+ * getc_command_helper - helper function
+ * @str: user input
+ * @c_command: pointer to command
+ * @cmd_size: pointer to size of command
+ * @i: pointer to index of user input
+ * @j: pointer to index of command
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -91,9 +91,9 @@ void getc_command_helper(char *str, char **c_command,
 	}
 }
 /**
- * edit_command - edit command to replace $$, $?, and $<env>
- * @str_ptr: pointer to command to be edited (char **)
- * @str_size: pointer to size of command to be edited (int *)
+ * edit_command - edit command to replace symbols
+ * @str_ptr: pointer to command
+ * @str_size: pointer to size of command
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -139,12 +139,12 @@ void edit_command(char **str_ptr, int *str_size)
 	_Free(temp);
 }
 /**
- * edit_command_helper - helper function for edit_command to replace $<env>
- * @str_ptr: pointer to command to be edited (char **) (copy of str)
- * @str: pointer to command to be edited (char *) (copy of str_ptr)
- * @temp: pointer to temp string (char *) to be used in editing
- * @index: pointer to index of command to be edited (int *) (copy of i)
- * Return: void (edited command is returned through str_ptr)
+ * edit_command_helper - helper function to replace
+ * @str_ptr: pointer to command
+ * @str: pointer to command
+ * @temp: pointer to temp string
+ * @index: pointer to index of command
+ * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 void edit_command_helper(char **str_ptr,
