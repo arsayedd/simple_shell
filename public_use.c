@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * buffers - set buffers to new values
- * @all_str: pointer to all_str to be set (char **)
- * @c_command: pointer to c_command to be set (char **)
- * @state: state of buffers (int)
+ * buffers - to set new values for buffers
+ * @all_str: pointer to be set
+ * @c_command: pointer to be set
+ * @state: state of these buffers
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
@@ -24,10 +24,10 @@ void buffers(char **all_str, char **c_command, int state)
 	}
 }
 /**
- * _enviornment - set enviornment to new values (char ***)
- * @envp: pointer to envp to be set (char **)
- * @state: state of enviornment (int)
- * Return: pointer to enviornment (char ***)
+ * _enviornment - to set enviornment to the new values
+ * @envp: pointer to be set
+ * @state: state of this enviornment
+ * Return: pointer to this enviornment
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 char ***_enviornment(char **envp, int state)
@@ -45,9 +45,9 @@ char ***_enviornment(char **envp, int state)
 	return (&enviornment);
 }
 /**
- * _state - set state to new values (int)
- * @c_state: state to be set (int)
- * Return: state (int)
+ * _state - to set state to a new value
+ * @c_state: state to use
+ * Return: state
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int _state(int c_state)
@@ -65,10 +65,10 @@ int _state(int c_state)
 	}
 }
 /**
- * _alias - set alias to new values (char **)
- * @alias_arg: alias to be set (char *)
- * @state: state of alias (int)
- * Return: pointer to alias (char **)
+ * _alias - to set new values for alias
+ * @alias_arg: alias to use
+ * @state: state of this alias
+ * Return: pointer to this alias
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 char **_alias(char *alias_arg, int state)
