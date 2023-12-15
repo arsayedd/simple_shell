@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * handle_exce - handles the excution of command
- * @c_path: pointer to path of command
- * @argumnet: pointer to array of arguments
- * Return: 0 if successful, otherwise 1
+ * handle_exce - to handle any excution of command
+ * @c_path: pointer to path of this command
+ * @argumnet: pointer to array
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_exce(char *c_path, char **argumnet)
@@ -34,10 +34,10 @@ int handle_exce(char *c_path, char **argumnet)
 	}
 }
 /**
- * execute_cmd - executes the command
- * @path: pointer to path of command
- * @args: pointer to array of arguments
- * Return: 0 if successful, otherwise 1
+ * execute_cmd - to execute any command
+ * @path: pointer to path of any command
+ * @args: pointer to array
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int execute_cmd(char *path, char **args)
@@ -47,10 +47,10 @@ int execute_cmd(char *path, char **args)
 	exit(2);
 }
 /**
- * handle_error - handles the error
- * @first_sigment: pointer to first sigment of command
- * @path: pointer to path of command
- * Return: 0 if successful, otherwise 1
+ * handle_error - to handle any error
+ * @first_sigment: pointer to first sigment
+ * @path: pointer to path of any command
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_error(char *first_sigment, char *path)
