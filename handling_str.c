@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strchr - locates a character in a string
- * @str: pointer to string
- * @c: character to locate
- * Return: pointer to first occurrence of c in str
+ * _strchr - to locate certain character in a string
+ * @str: pointer to string to use
+ * @c: character to find
+ * Return: pointer to first occurrence of char
  */
 int *_strchr(const char *str, int c)
 {
@@ -18,10 +18,10 @@ int *_strchr(const char *str, int c)
 	return ((int *)str);
 }
 /**
- * _strtok - tokenizes a string
- * @str: pointer to string
- * @delimiters: pointer to delimiters
- * Return: pointer to next token
+ * _strtok - to make a token out of a string
+ * @str: pointer to a string
+ * @delimiters: pointer to a delimiters
+ * Return: pointer to the next token
  */
 char *_strtok(char *str, const char *delimiters)
 {
@@ -44,10 +44,10 @@ char *_strtok(char *str, const char *delimiters)
 	return (ret);
 }
 /**
- * _strtok2 - tokenizes a string
- * @str: pointer to string
- * @delimiters: pointer to delimiters
- * Return: pointer to next token
+ * _strtok2 - to make a token out of a string
+ * @str: pointer to a string
+ * @delimiters: pointer to a delimiters
+ * Return: pointer to the next token
  */
 char *_strtok2(char *str, const char *delimiters)
 {
@@ -70,9 +70,9 @@ char *_strtok2(char *str, const char *delimiters)
 	return (ret);
 }
 /**
- * _strlen - returns the length of a string
- * @p_string: pointer to string
- * Return: length of string
+ * _strlen - to return length of a string
+ * @p_string: pointer to a string
+ * Return: length of the string
  */
 int _strlen(char *p_string)
 {
