@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * handle_env - handle env command (char **)
- * @envp: arguments to handle env command (char **)
- * Return: 0 on success, 1 on failure
+ * handle_env - to handle the env command
+ * @envp: arguments to handle
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_env(char *envp[])
@@ -52,9 +52,9 @@ int handle_unsetenv(char *argv[])
 }
 
 /**
- * handle_setenv - handle setenv command (char **)
- * @argv: arguments to handle setenv command (char **)
- * Return: 0 on success, 1 on failure
+ * handle_setenv - to handle the setenv command 
+ * @argv: arguments to handle
+ * Return: 0 (success), 1 (failure)
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
 int handle_setenv(char *argv[])
@@ -96,8 +96,8 @@ int handle_setenv(char *argv[])
 }
 
 /**
- * free_buff - free buffer
- * @str: pointer to buffer
+ * free_buff - to free a buffer
+ * @str: pointer to this buffer
  * Return: void
  * Authors: Ahmed Raafat & Ahmed Abdelanasser
  */
